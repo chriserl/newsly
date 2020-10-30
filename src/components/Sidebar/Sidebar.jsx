@@ -3,7 +3,7 @@ import "./sidebar.scss";
 
 const Sidebar = (props) => {
 	return (
-		<nav className={`sidebar ${props.sidebarState}`}>
+		<nav className={`sidebar ${props.barState}`}>
 			<div className="sidebar-header">
 				<a href="./" className="brand">
 					<span className="lab la-cloudsmith"></span>

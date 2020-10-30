@@ -3,8 +3,72 @@
 	padding: 0.04rem;
 }
 
+//Text
+.ph {
+	font-size: 1.16rem;
+	font-family: PoppinsMedium;
+}
+
+.pl {
+	font-size: 1rem;
+}
+
+.ps {
+	font-size: 0.88rem;
+}
+
+.px {
+	font-size: 0.8rem;
+}
+
+.pxb {
+	font-size: 0.8rem;
+	font-family: PoppinsMedium;
+}
+
+//Buttons
 .regular-icon-button {
-	@include flex;
 	@extend .button;
-	@extend .regular-icon;
+	@include flex;
+	@include small-icon;
+	padding: 0.4rem;
+	border-radius: $spacing-3;
+	background: white;
+	border: 1.4px solid hsl(0, 0%, 87%);
+	transition: all 0.25s ease;
+
+	&:hover {
+		box-shadow: 3.2px 8px 20px hsl(0, 0%, 87%);
+	}
+}
+
+//Form
+.form-control {
+	width: 100%;
+	@include flex;
+	background: $hover-lighter;
+	border-radius: $spacing-3;
+
+	input {
+		width: 100%;
+		padding: $spacing-3 $spacing-6;
+		border: none;
+		background: transparent;
+		margin-right: $spacing-2;
+		@include ps;
+		color: $light-text;
+
+		&::placeholder {
+			@include px;
+			color: $muted-text;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.submit-button {
+		margin-right: $spacing-1;
+	}
 }

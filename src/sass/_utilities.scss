@@ -49,26 +49,37 @@
 }
 
 //Text
-.ph {
+@mixin ph {
 	font-size: 1.16rem;
 	font-family: PoppinsMedium;
 }
 
-.pl {
+@mixin pl {
 	font-size: 1rem;
 }
 
-.ps {
+@mixin ps {
 	font-size: 0.88rem;
 }
 
-.px {
+@mixin px {
 	font-size: 0.8rem;
 }
 
-.pxb {
+@mixin pxb {
 	font-size: 0.8rem;
 	font-family: PoppinsMedium;
+}
+
+//Icons
+@mixin small-icon {
+	font-size: 1rem;
+	padding: 0.04rem;
+}
+
+@mixin regular-icon {
+	font-size: 1.32rem;
+	padding: 0.04rem;
 }
 
 //Components

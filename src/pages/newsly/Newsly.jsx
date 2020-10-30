@@ -12,11 +12,15 @@ const Newsly = () => {
 		);
 	};
 
+	let exitSidebar = () => {
+		setBarState(() => "sidebar-closed");
+	};
+
 	return (
 		<div className="newsly">
-			<Sidebar sidebarState={barState} />
-			<main onClick={() => toggleBarState()}>
-				<Topnav />
+			<Sidebar barState={barState} />
+			<main onClick={() => exitSidebar()}>
+				<Topnav toggleBarState={() => toggleBarState()} />
 			</main>
 		</div>
 	);

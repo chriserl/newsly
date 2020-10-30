@@ -1,2 +1,46 @@
 @import "../../sass/variables";
 @import "../../sass/utilities";
+
+.topnav {
+	width: 100%;
+	@include flex($justify: space-between);
+	padding: $spacing-8;
+
+	.menu-button {
+		border: none;
+
+		@include tab-screen {
+			@include d-none;
+		}
+	}
+
+	form {
+		width: 96%;
+		@include d-none;
+
+		@include tab-screen {
+			@include flex;
+			width: 32%;
+		}
+	}
+
+	.actions {
+		@include flex;
+
+		.search-action {
+			@include tab-screen {
+				@include d-none;
+			}
+		}
+
+		.user-image {
+			@include flex;
+			margin-left: $spacing-6;
+
+			img {
+				width: 32px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
