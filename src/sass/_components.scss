@@ -1,0 +1,10 @@
+.regular-icon {
+	font-size: 1.32rem;
+	padding: 0.04rem;
+}
+
+.regular-icon-button {
+	@include flex;
+	@extend .button;
+	@extend .regular-icon;
+}

@@ -1,5 +1,77 @@
 @import "../../sass/variables";
 @import "../../sass/utilities";
 
+.sidebar-closed {
+	@include d-none;
+}
+
 .sidebar {
+	width: 14rem;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: $spacing-6 $spacing-8 $spacing-8;
+	background: hsl(0, 0%, 96%);
+	overflow-y: hidden;
+
+	.sidebar-header {
+		width: 100%;
+		@include flex($justify: space-between);
+
+		.brand {
+			@include flex;
+			color: hsl(0, 0%, 0%);
+
+			.lab {
+				font-size: 1.56rem;
+				margin-right: $spacing-1;
+			}
+
+			.brand-text {
+				font-size: 1.64rem;
+				font-family: Billabong;
+			}
+		}
+
+		@include tab-screen {
+			.close-sidebar-button {
+				@include d-none;
+			}
+		}
+	}
+
+	.categories {
+		width: 100%;
+		margin-top: $spacing-12;
+
+		.categories-title {
+			text-transform: uppercase;
+			margin-left: $spacing-2;
+		}
+
+		.categories-list {
+			margin-top: $spacing-8;
+
+			.category-item {
+				margin-bottom: $spacing-6;
+
+				.category-link {
+					@include flex;
+					padding: $spacing-2;
+					border-radius: $spacing-2;
+					color: hsl(0, 0%, 0%);
+					transition: all 0.48s ease;
+
+					&:hover {
+						background-color: hsl(0, 0%, 88%);
+					}
+
+					.las {
+						margin-right: $spacing-3;
+					}
+				}
+			}
+		}
+	}
 }

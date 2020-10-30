@@ -1,5 +1,5 @@
 //Flexbox
-@mixin flex($direction: null, $align: null, $justify: null) {
+@mixin flex($direction: row, $align: center, $justify: null) {
 	display: flex;
 	flex-direction: $direction;
 	align-items: $align;
@@ -51,6 +51,7 @@
 //Text
 .ph {
 	font-size: 1.16rem;
+	font-family: PoppinsMedium;
 }
 
 .pl {
@@ -62,7 +63,13 @@
 }
 
 .px {
-	font-size: 0.8 rem;
+	font-size: 0.8rem;
+}
+
+//Components
+.button {
+	background: transparent;
+	border: none;
 }
 
 //Hide Scrollbar
