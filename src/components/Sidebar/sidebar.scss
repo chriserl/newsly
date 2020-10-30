@@ -12,7 +12,7 @@
 	left: 0;
 	top: 0;
 	padding: $spacing-6 $spacing-8 $spacing-8;
-	background: hsl(0, 0%, 96%);
+	background: hsl(0, 0%, 99%);
 	overflow-y: hidden;
 
 	.sidebar-header {
@@ -21,7 +21,7 @@
 
 		.brand {
 			@include flex;
-			color: hsl(0, 0%, 0%);
+			color: $primary-color;
 
 			.lab {
 				font-size: 1.56rem;
@@ -48,6 +48,7 @@
 		.categories-title {
 			text-transform: uppercase;
 			margin-left: $spacing-2;
+			color: $muted-text;
 		}
 
 		.categories-list {
@@ -60,11 +61,11 @@
 					@include flex;
 					padding: $spacing-2;
 					border-radius: $spacing-2;
-					color: hsl(0, 0%, 0%);
+					color: $text-color;
 					transition: all 0.48s ease;
 
 					&:hover {
-						background-color: hsl(0, 0%, 88%);
+						background-color: $hover-light;
 					}
 
 					.las {

@@ -25,7 +25,7 @@ const Sidebar = () => {
 				</button>
 			</div>
 			<div className="categories">
-				<p className="categories-title px">categories</p>
+				<p className="categories-title pxb">categories</p>
 				<ul className="categories-list">
 					<li className="category-item">
 						<a href="./" className="category-link">
