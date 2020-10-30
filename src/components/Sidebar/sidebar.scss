@@ -6,7 +6,7 @@
 }
 
 .sidebar {
-	width: 14rem;
+	width: 14.6rem;
 	height: 100vh;
 	position: fixed;
 	left: 0;
@@ -61,11 +61,12 @@
 					@include flex;
 					padding: $spacing-2;
 					border-radius: $spacing-2;
-					color: $text-color;
+					color: $light-text;
 					transition: all 0.48s ease;
 
 					&:hover {
 						background-color: $hover-light;
+						color: $text-color;
 					}
 
 					.las {

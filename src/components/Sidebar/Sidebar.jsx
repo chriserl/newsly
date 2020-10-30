@@ -1,28 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./sidebar.scss";
 
 const Sidebar = () => {
-	let [barState, setBarState] = useState(() => "sidebar-open");
-
-	let toggleBar = () => {
-		setBarState(() =>
-			barState === "sidebar-open" ? "sidebar-closed" : "sidebar-open"
-		);
-	};
-
 	return (
-		<nav className={`sidebar ${barState}`}>
+		<nav className={`sidebar`}>
 			<div className="sidebar-header">
 				<a href="./" className="brand">
 					<span className="lab la-cloudsmith"></span>
 					<p className="brand-text">Newsly</p>
 				</a>
-				<button
-					onClick={() => toggleBar()}
-					className="close-sidebar-button regular-icon-button"
-				>
-					<span className="las la-times"></span>
-				</button>
 			</div>
 			<div className="categories">
 				<p className="categories-title pxb">categories</p>
