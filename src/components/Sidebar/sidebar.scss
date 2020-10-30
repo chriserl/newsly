@@ -3,6 +3,10 @@
 
 .sidebar-closed {
 	@include d-none;
+
+	@include tab-screen {
+		display: block;
+	}
 }
 
 .sidebar {

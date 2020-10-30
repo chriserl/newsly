@@ -1,9 +1,9 @@
 import React from "react";
 import "./sidebar.scss";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
 	return (
-		<nav className={`sidebar`}>
+		<nav className={`sidebar ${props.sidebarState}`}>
 			<div className="sidebar-header">
 				<a href="./" className="brand">
 					<span className="lab la-cloudsmith"></span>
