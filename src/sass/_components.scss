@@ -4,26 +4,32 @@
 }
 
 //Text
+.h4 {
+	@include h4;
+}
+
 .ph {
-	font-size: 1.16rem;
-	font-family: PoppinsMedium;
+	@include ph;
 }
 
 .pl {
-	font-size: 1rem;
+	@include pl;
+}
+
+.plb {
+	@include plb;
 }
 
 .ps {
-	font-size: 0.88rem;
+	@include ps;
 }
 
 .px {
-	font-size: 0.8rem;
+	@include px;
 }
 
 .pxb {
-	font-size: 0.8rem;
-	font-family: PoppinsMedium;
+	@include pxb;
 }
 
 //Buttons
@@ -39,6 +45,20 @@
 
 	&:hover {
 		box-shadow: 3.2px 8px 20px hsl(0, 0%, 87%);
+	}
+}
+
+.link-button {
+	@extend .button;
+	@include px;
+	background: hsl(0, 0%, 27%);
+	color: $primary-color;
+	padding: $spacing-3 $spacing-6;
+	border-radius: $spacing-8;
+	transition: all 0.25s ease;
+
+	&:hover {
+		background: hsl(0, 0%, 17%);
 	}
 }
 

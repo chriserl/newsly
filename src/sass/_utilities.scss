@@ -49,13 +49,27 @@
 }
 
 //Text
+@mixin h4 {
+	font-size: 1.32rem;
+	font-family: PoppinsMedium;
+	line-height: calc(1.16rem * 1.5);
+	letter-spacing: 0.4px;
+}
+
 @mixin ph {
 	font-size: 1.16rem;
 	font-family: PoppinsMedium;
+	line-height: calc(1.16rem * 1.5);
+	letter-spacing: 0.4px;
 }
 
 @mixin pl {
 	font-size: 1rem;
+}
+
+@mixin plb {
+	font-size: 1rem;
+	font-family: PoppinsMedium;
 }
 
 @mixin ps {
