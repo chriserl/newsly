@@ -11,7 +11,6 @@
 		&::after {
 			display: block;
 			position: relative;
-			border-radius: $spacing-4;
 			bottom: 26rem;
 			content: "";
 			width: 100%;
@@ -28,16 +27,20 @@
 			height: 100%;
 			display: block;
 			object-fit: cover;
-			border-radius: $spacing-4;
 		}
 	}
 
 	.news-info {
 		position: relative;
 		bottom: 14rem;
-		left: 3.2rem;
+		left: $spacing-4;
 		color: $hover-lighter;
-		width: max-content;
+		width: 100%;
+
+		@include tab-screen {
+			left: 3.2rem;
+			width: max-content;
+		}
 
 		.category {
 			@include flex;
