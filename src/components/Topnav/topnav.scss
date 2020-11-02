@@ -4,10 +4,15 @@
 .topnav {
 	width: 100%;
 	@include flex($justify: space-between);
-	padding: $spacing-8;
+	padding: $spacing-6;
 
 	.menu-button {
 		border: none;
+
+		&:active,
+		&:hover {
+			box-shadow: none;
+		}
 
 		@include tab-screen {
 			@include d-none;
