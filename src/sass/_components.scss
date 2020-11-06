@@ -45,20 +45,23 @@
 
 	&:hover {
 		box-shadow: 3.2px 8px 20px hsl(0, 0%, 87%);
+		color: $primary-color;
 	}
 }
 
 .link-button {
 	@extend .button;
 	@include px;
-	background: hsl(0, 0%, 27%);
+	background: hsl(0, 0%, 12%);
 	color: $primary-color;
-	padding: $spacing-3 $spacing-6;
-	border-radius: $spacing-8;
+	padding: $spacing-2 $spacing-6;
+	border-radius: 0.64rem;
+	cursor: pointer;
 	transition: all 0.25s ease;
 
 	&:hover {
-		background: hsl(0, 0%, 17%);
+		background: hsl(0, 0%, 16%);
+		color: $hover-lighter;
 	}
 }
 

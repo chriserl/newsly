@@ -5,12 +5,21 @@
 	width: 100%;
 
 	.banner-image-container {
-		width: 100%;
+		width: 98%;
 		height: 26rem;
+		padding: $spacing-1;
+		margin: $spacing-1;
+		box-shadow: 0px 12px 16px hsl(0, 0%, 85%);
+		border-radius: $spacing-2;
+
+		@include tab-screen {
+			margin: $spacing-4;
+		}
 
 		&::after {
 			display: block;
 			position: relative;
+			border-radius: $spacing-2;
 			bottom: 26rem;
 			content: "";
 			width: 100%;
@@ -27,42 +36,47 @@
 			height: 100%;
 			display: block;
 			object-fit: cover;
+			border-radius: $spacing-2;
 		}
 	}
 
 	.news-info {
 		position: relative;
 		bottom: 14rem;
-		left: $spacing-4;
+		left: $spacing-6;
 		color: $hover-lighter;
 		width: 100%;
 
 		@include tab-screen {
-			left: 3.2rem;
+			left: 4rem;
 			width: max-content;
 		}
 
 		.category {
 			@include flex;
-			margin-bottom: $spacing-4;
+			margin-bottom: $spacing-5;
 
 			.category-name {
-				margin-left: $spacing-1;
+				color: $primary-color-dark;
 			}
 		}
 
 		.news-title {
-			margin-bottom: $spacing-2;
+			margin-bottom: $spacing-8;
 		}
 
 		.minute {
 			@include flex;
-			margin-bottom: $spacing-10;
 			color: $muted-text;
 
-			.dot {
-				margin: 0 $spacing-2;
-				content: ".";
+			.read-time {
+				margin-right: $spacing-6;
+				margin-left: $spacing-3;
+
+				@include tab-screen {
+					margin-right: $spacing-8;
+					margin-left: $spacing-4;
+				}
 			}
 		}
 	}
