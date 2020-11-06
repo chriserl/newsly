@@ -5,7 +5,7 @@ import { Home } from "../../views/Home/Home";
 import "./newsly.scss";
 
 const Newsly = () => {
-	let [barState, setBarState] = useState(() => "sidebar-opened");
+	let [barState, setBarState] = useState(() => "sidebar-closed");
 
 	let toggleBarState = () => {
 		setBarState(() =>
@@ -13,10 +13,14 @@ const Newsly = () => {
 		);
 	};
 
+	let exitSidebar = () => {
+		barState === "sidebar-opened" && toggleBarState();
+	};
+
 	return (
-		<div className="newsly">
+		<div className="newsly" onClick={() => exitSidebar()}>
 			<Sidebar barState={barState} />
-			<main onClick={() => toggleBarState()}>
+			<main>
 				<Topnav toggleBarState={() => toggleBarState()} />
 				<Home />
 			</main>
