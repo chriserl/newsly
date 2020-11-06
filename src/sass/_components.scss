@@ -24,6 +24,10 @@
 	@include ps;
 }
 
+.psb {
+	@include psb;
+}
+
 .px {
 	@include px;
 }
@@ -37,14 +41,14 @@
 	@extend .button;
 	@include flex;
 	@include small-icon;
-	padding: 0.4rem;
-	border-radius: $spacing-3;
+	padding: 0.48rem;
+	border-radius: $spacing-4;
 	background: white;
 	border: 1.4px solid hsl(0, 0%, 87%);
 	transition: all 0.25s ease;
 
 	&:hover {
-		box-shadow: 3.2px 8px 20px hsl(0, 0%, 87%);
+		box-shadow: 8px 8px 18px 6px $hover-light;
 		color: $primary-color;
 	}
 }
@@ -74,11 +78,11 @@
 
 	input {
 		width: 100%;
-		padding: $spacing-3 $spacing-6;
+		padding: $spacing-2 $spacing-6;
 		border: none;
 		background: transparent;
 		margin-right: $spacing-2;
-		@include ps;
+		@include px;
 		color: $light-text;
 
 		&::placeholder {

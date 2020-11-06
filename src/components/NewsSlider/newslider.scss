@@ -1,0 +1,48 @@
+@import "../../sass/variables";
+@import "../../sass/utilities";
+
+.newslider {
+	width: 96%;
+	margin: -4rem auto 16rem;
+
+	.slider-header {
+		width: 96%;
+		margin: 0 auto;
+		@include flex($justify: space-between);
+
+		.slider-title {
+			text-transform: uppercase;
+			letter-spacing: 6.4px;
+			color: $light-text;
+		}
+
+		.slider-controls {
+			@include d-none;
+
+			@include tab-screen {
+				@include flex;
+			}
+
+			button {
+				margin: 0 $spacing-4;
+			}
+		}
+	}
+
+	.slider-body {
+		width: 100%;
+		overflow-x: scroll;
+		padding: $spacing-12 0;
+		padding-top: $spacing-6;
+		@include scroll-hide;
+
+		.slider-items {
+			width: max-content;
+			@include flex;
+
+			.slider-item {
+				margin-right: $spacing-8;
+			}
+		}
+	}
+}

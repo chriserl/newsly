@@ -74,6 +74,12 @@
 
 @mixin ps {
 	font-size: 0.88rem;
+	line-height: calc(0.88 * 1.5);
+}
+
+@mixin psb {
+	@include ps;
+	font-family: PoppinsMedium;
 }
 
 @mixin px {

@@ -1,0 +1,43 @@
+@import "../../sass/variables";
+@import "../../sass/utilities";
+
+.news-card {
+	min-width: 316px;
+	max-width: 380px;
+	@include flex($align: flex-start);
+	padding: $spacing-4;
+	padding-right: $spacing-8;
+	border-radius: $spacing-6;
+	border: 1.6px solid $hover-lighter;
+
+	&:hover {
+		box-shadow: 0px 8px 16px rgb(233, 233, 233);
+	}
+
+	.news-card-image {
+		width: 6rem;
+		height: 6rem;
+		border-radius: $spacing-8;
+	}
+
+	.news-info {
+		margin-left: $spacing-6;
+
+		.news-source {
+			text-transform: uppercase;
+			margin-bottom: $spacing-3;
+			letter-spacing: 1.6px;
+			color: $muted-text;
+		}
+
+		.details {
+			@include flex;
+			margin-top: $spacing-5;
+
+			.category {
+				margin-right: $spacing-4;
+				color: $primary-color;
+			}
+		}
+	}
+}
