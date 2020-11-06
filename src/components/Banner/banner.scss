@@ -55,10 +55,6 @@
 		.category {
 			@include flex;
 			margin-bottom: $spacing-5;
-
-			.category-name {
-				color: $primary-color-dark;
-			}
 		}
 
 		.news-title {
@@ -67,7 +63,7 @@
 
 		.minute {
 			@include flex;
-			color: $muted-text;
+			color: $theme-light;
 
 			.read-time {
 				margin-right: $spacing-6;

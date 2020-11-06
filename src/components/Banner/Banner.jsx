@@ -10,7 +10,9 @@ const Banner = () => {
 			</div>
 			<div className="news-info">
 				<span className="category">
-					<p className="category-name px">Technology</p>
+					<a href="/" className="category-name text-link px">
+						Technology
+					</a>
 				</span>
 				<p className="news-title h4">
 					Renegades vs Chiefs - ESL Pro League <br /> Season 16 - Playoffs
