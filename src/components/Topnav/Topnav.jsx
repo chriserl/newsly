@@ -7,7 +7,7 @@ const Topnav = (props) => {
 		<div className="topnav">
 			<button
 				onClick={props.toggleBarState}
-				className="regular-icon-button menu-button"
+				className="light-regular-icon-button menu-button"
 			>
 				<span className="las la-bars"></span>
 			</button>
