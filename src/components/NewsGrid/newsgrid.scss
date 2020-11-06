@@ -1,0 +1,22 @@
+@import "../../sass/variables";
+@import "../../sass/utilities";
+
+.news-grid {
+	width: 96%;
+	margin: -12rem auto 16rem;
+
+	.grid-title {
+		text-transform: uppercase;
+		letter-spacing: 6.4px;
+		color: $light-text;
+		margin-left: $spacing-8;
+	}
+
+	.items-grid {
+		width: 100%;
+		margin-top: $spacing-10;
+		@include grid;
+		grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+		grid-gap: $spacing-12;
+	}
+}
