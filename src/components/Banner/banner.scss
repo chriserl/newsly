@@ -44,7 +44,6 @@
 		position: relative;
 		bottom: 14rem;
 		left: $spacing-6;
-		color: $hover-lighter;
 		width: 100%;
 
 		@include tab-screen {
@@ -59,6 +58,7 @@
 
 		.news-title {
 			margin-bottom: $spacing-8;
+			color: $theme-white;
 		}
 
 		.minute {
