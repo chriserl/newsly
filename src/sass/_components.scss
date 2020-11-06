@@ -39,6 +39,11 @@
 	@include pxb;
 }
 
+//Links
+.text-link {
+	color: $theme-blue;
+}
+
 //Buttons
 .regular-icon-button {
 	@extend .button;

@@ -14,37 +14,37 @@ const Sidebar = (props) => {
 				<p className="categories-title pxb">categories</p>
 				<ul className="categories-list">
 					<li className="category-item">
-						<a href="./" className="category-link">
+						<a href="./" className="category-link text-link">
 							<span className="las la-braille regular-icon"></span>
 							<p className="ps">Home</p>
 						</a>
 					</li>
 					<li className="category-item">
-						<a href="./" className="category-link">
+						<a href="./" className="category-link text-link">
 							<span className="las la-map-marker regular-icon"></span>
 							<p className="ps">International</p>
 						</a>
 					</li>
 					<li className="category-item">
-						<a href="./" className="category-link">
+						<a href="./" className="category-link text-link">
 							<span className="las la-euro-sign regular-icon"></span>
 							<p className="ps">Business</p>
 						</a>
 					</li>
 					<li className="category-item">
-						<a href="./" className="category-link">
+						<a href="./" className="category-link text-link">
 							<span className="las la-microphone regular-icon"></span>
 							<p className="ps">Entertainment</p>
 						</a>
 					</li>
 					<li className="category-item">
-						<a href="./" className="category-link">
+						<a href="./" className="category-link text-link">
 							<span className="las la-basketball-ball regular-icon"></span>
 							<p className="ps">Sports</p>
 						</a>
 					</li>
 					<li className="category-item">
-						<a href="./" className="category-link">
+						<a href="./" className="category-link text-link">
 							<span className="las la-heartbeat regular-icon"></span>
 							<p className="ps">Health</p>
 						</a>

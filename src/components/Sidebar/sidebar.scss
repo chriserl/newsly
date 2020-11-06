@@ -26,7 +26,7 @@
 
 		.brand {
 			@include flex;
-			color: $primary-color;
+			color: $theme-blue;
 
 			.lab {
 				font-size: 1.56rem;
@@ -38,12 +38,6 @@
 				font-family: Billabong;
 			}
 		}
-
-		@include tab-screen {
-			.close-sidebar-button {
-				@include d-none;
-			}
-		}
 	}
 
 	.categories {
@@ -53,25 +47,26 @@
 		.categories-title {
 			text-transform: uppercase;
 			margin-left: $spacing-2;
-			color: $muted-text;
+			color: $theme-light;
 		}
 
 		.categories-list {
 			margin-top: $spacing-8;
 
 			.category-item {
-				margin-bottom: $spacing-6;
+				margin-bottom: $spacing-5;
 
 				.category-link {
 					@include flex;
 					padding: $spacing-2;
 					border-radius: $spacing-2;
-					color: $light-text;
+					color: $theme-dark-gray;
+
 					transition: all 0.48s ease;
 
 					&:hover {
-						background-color: $hover-light;
-						color: $text-color;
+						background-color: $theme-white;
+						color: $theme-dark;
 					}
 
 					.las {
