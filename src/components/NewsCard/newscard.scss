@@ -2,8 +2,7 @@
 @import "../../sass/utilities";
 
 .news-card {
-	min-width: 316px;
-	max-width: 380px;
+	width: 100%;
 	@include flex($align: flex-start);
 	padding: $spacing-4;
 	padding-right: $spacing-8;
@@ -15,20 +14,13 @@
 	}
 
 	.news-card-image {
-		width: 6rem;
-		height: 6rem;
+		width: 4rem;
+		height: 4rem;
 		border-radius: $spacing-8;
 	}
 
 	.news-info {
 		margin-left: $spacing-6;
-
-		.news-source {
-			text-transform: uppercase;
-			margin-bottom: $spacing-3;
-			letter-spacing: 1.6px;
-			color: $muted-text;
-		}
 
 		.details {
 			@include flex;
@@ -37,6 +29,13 @@
 			.category {
 				margin-right: $spacing-4;
 				color: $primary-color;
+			}
+
+			.news-source {
+				text-transform: uppercase;
+				margin-left: $spacing-4;
+				letter-spacing: 1.6px;
+				color: $muted-text;
 			}
 		}
 	}

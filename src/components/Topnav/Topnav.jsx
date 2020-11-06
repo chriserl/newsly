@@ -12,7 +12,7 @@ const Topnav = (props) => {
 				<span className="las la-bars"></span>
 			</button>
 			<form>
-				<div className="form-control">
+				<div className="search-component">
 					<input
 						type="text"
 						className="search-input"
