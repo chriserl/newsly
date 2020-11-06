@@ -45,6 +45,15 @@
 	padding: 0.12rem;
 }
 
+//Tabs
+.tab {
+	padding: $spacing-1 $spacing-4;
+	background: $theme-white;
+	color: $theme-light;
+	border-radius: $spacing-8;
+	cursor: pointer;
+}
+
 //Buttons
 .regular-icon-button {
 	@extend .button;
@@ -61,6 +70,24 @@
 
 	&:hover {
 		box-shadow: 4px 12px 18px $theme-shadow-color;
+	}
+}
+
+.light-regular-icon-button {
+	@extend .button;
+	@include flex;
+	padding: 0.16rem;
+	background: $theme-white;
+	border-radius: $spacing-4;
+	transition: all 0.25s ease;
+
+	span {
+		@include small-icon;
+		color: $theme-blue;
+	}
+
+	&:hover {
+		box-shadow: 2px 6px 12px $theme-shadow-color;
 	}
 }
 

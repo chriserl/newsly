@@ -10,10 +10,10 @@ const NewSlider = () => {
 			<div className="slider-header">
 				<p className="slider-title psb">today</p>
 				<div className="slider-controls px">
-					<button className="regular-icon-button">
+					<button className="light-regular-icon-button">
 						<span className="las la-long-arrow-alt-left"></span>
 					</button>
-					<button className="regular-icon-button">
+					<button className="light-regular-icon-button">
 						<span className="las la-long-arrow-alt-right"></span>
 					</button>
 				</div>

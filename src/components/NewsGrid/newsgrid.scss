@@ -7,8 +7,8 @@
 
 	.grid-title {
 		text-transform: uppercase;
-		letter-spacing: 6.4px;
-		color: $light-text;
+		letter-spacing: 6px;
+		color: $theme-light;
 		margin-left: $spacing-8;
 	}
 
@@ -17,10 +17,10 @@
 		margin-top: $spacing-10;
 		@include grid;
 		grid-template-columns: 1fr;
-		grid-gap: $spacing-12;
+		grid-gap: $spacing-8;
 
 		@include tab-screen {
-			grid-template-columns: repeat(auto-fill, 340px);
+			grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
 		}
 	}
 }

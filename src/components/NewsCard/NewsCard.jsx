@@ -7,13 +7,15 @@ const NewsCard = () => {
 		<div className="news-card">
 			<img src={bannerImage} alt="news" className="news-card-image" />
 			<div className="news-info">
-				<p className="headline psb">
+				<a href="/" className="headline psb">
 					Facebook preparing new app to maintain pressure
-				</p>
-				<div className="details px">
-					<p className="category">Tech</p>
-					<p className="date-stamp">3 days ago</p>
-					<p className="news-source px">bbc</p>
+				</a>
+				<div className="details">
+					<span className="category tab">
+						<p className="pxb">Tech</p>
+					</span>
+					<p className="date-stamp px">3 days ago</p>
+					<p className="news-source px text-link">bbc</p>
 				</div>
 			</div>
 		</div>

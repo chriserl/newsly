@@ -7,10 +7,11 @@
 	padding: $spacing-4;
 	padding-right: $spacing-8;
 	border-radius: $spacing-6;
-	border: 1.6px solid $hover-lighter;
+	border: 1.6px solid $theme-white;
+	transition: all 0.25s ease;
 
 	&:hover {
-		box-shadow: 0px 8px 16px rgb(233, 233, 233);
+		box-shadow: 0px 4px 16px $theme-shadow-color;
 	}
 
 	.news-card-image {
@@ -22,20 +23,26 @@
 	.news-info {
 		margin-left: $spacing-6;
 
+		.headline {
+			color: $theme-black;
+		}
+
 		.details {
 			@include flex;
 			margin-top: $spacing-5;
 
 			.category {
 				margin-right: $spacing-4;
-				color: $primary-color;
+			}
+
+			.date-stamp {
+				color: $theme-dark-gray;
 			}
 
 			.news-source {
 				text-transform: uppercase;
 				margin-left: $spacing-4;
 				letter-spacing: 1.6px;
-				color: $muted-text;
 			}
 		}
 	}

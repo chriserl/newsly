@@ -12,8 +12,8 @@
 
 		.slider-title {
 			text-transform: uppercase;
-			letter-spacing: 6.4px;
-			color: $light-text;
+			letter-spacing: 6px;
+			color: $theme-light;
 		}
 
 		.slider-controls {
@@ -42,6 +42,11 @@
 
 			.slider-item {
 				margin-right: $spacing-8;
+				width: 96vw;
+
+				@include tab-screen {
+					width: 20rem;
+				}
 			}
 		}
 	}
