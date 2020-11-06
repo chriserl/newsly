@@ -6,6 +6,10 @@
 	@include regular-icon;
 }
 
+.large-icon {
+	@include large-icon;
+}
+
 //Text
 .h4 {
 	@include h4;
@@ -83,6 +87,24 @@
 
 	span {
 		@include small-icon;
+		color: $theme-blue;
+	}
+
+	&:hover {
+		box-shadow: 2px 6px 12px $theme-shadow-color;
+	}
+}
+
+.light-large-icon-button {
+	@extend .button;
+	@include flex;
+	padding: 0.16rem;
+	background: $theme-white;
+	border-radius: $spacing-4;
+	transition: all 0.25s ease;
+
+	span {
+		@include large-icon;
 		color: $theme-blue;
 	}
 

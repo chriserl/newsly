@@ -102,6 +102,11 @@
 	padding: 0.24rem;
 }
 
+@mixin large-icon {
+	font-size: 1.64rem;
+	padding: 0.2rem;
+}
+
 //Components
 .button {
 	background: transparent;
